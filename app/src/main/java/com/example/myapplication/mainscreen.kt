@@ -102,11 +102,11 @@ class mainscreen : AppCompatActivity() {
             }
         }
         btnView.setOnClickListener {
-            startActivity(
-                intent(
-                    this,DetailedActivity::class.java
-                )
-            )
+            val intent = Intent(this, DetailedActivity::class.java)
+            startActivity(intent)
+            finish()
+
+
         }
 
 

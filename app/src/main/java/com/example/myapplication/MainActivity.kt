@@ -49,4 +49,12 @@ class MainActivity : AppCompatActivity() {
                 insets
             }
         }
-    }}
+    }
+
+    companion object {
+        val comments: String
+        val quantities: String
+        val categories: String
+        val itemNames: String
+    }
+}

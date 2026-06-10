@@ -11,4 +11,6 @@
     <string name="total_items_packed_0">Total items packed:0</string>
     <string name="item_name">Item Name</string>
     <string name="category">Category</string>
+    <string name="camping_gear_details">Camping gear details</string>
+    <string name="back_to_base">Back to base</string>
 </resources>
