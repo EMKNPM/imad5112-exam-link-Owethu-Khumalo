@@ -3,4 +3,12 @@
     <string name="proceed">Proceed</string>
     <string name="please_wait">please wait...</string>
     <string name="campsite_commander">Campsite Commander</string>
+    <string name="the_campsite_commander">The Campsite Commander</string>
+    <string name="quantity">Quantity</string>
+    <string name="comments">Comments</string>
+    <string name="add">Add</string>
+    <string name="view_details">View details</string>
+    <string name="total_items_packed_0">Total items packed:0</string>
+    <string name="item_name">Item Name</string>
+    <string name="category">Category</string>
 </resources>

@@ -27,26 +27,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //typecasting
-        btnProceed.findViewById(R.id.btnProceed)
+        btnProceed=findViewById(R.id.btnProceed)
 
         //buttonclick listener
         btnProceed.setOnClickListener {
             btnProceed.setOnClickListener {
-                val intent = Intent(this, Mainscreen::class.java)
+                val intent = Intent(this, mainscreen::class.java)
                 startActivity(intent)
                 finish()
+            }
+
+
+
+
+
+
+
+            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+                val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+                insets
+            }
         }
-
-
-
-
-
-
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-    }
-}
+    }}
