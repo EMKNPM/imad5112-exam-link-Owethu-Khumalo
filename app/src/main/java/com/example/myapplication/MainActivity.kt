@@ -14,11 +14,26 @@ class MainActivity : AppCompatActivity() {
     //Declarations
     private lateinit var txtTitle: TextView
     private lateinit var text2: TextView
-    private lateinit var btnProceed : Button
+    private lateinit var btnProceed: Button
 
-
-
-
+    companion object {
+        val comments: String
+            get() {
+                TODO()
+            }
+        val quantities: String
+            get() {
+                TODO()
+            }
+        val categories: String
+            get() {
+                TODO()
+            }
+        val itemNames: String
+            get() {
+                TODO()
+            }
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //typecasting
-        btnProceed=findViewById(R.id.btnProceed)
+        btnProceed = findViewById(R.id.btnProceed)
 
         //buttonclick listener
         btnProceed.setOnClickListener {
@@ -50,11 +65,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
-    companion object {
-        val comments: String
-        val quantities: String
-        val categories: String
-        val itemNames: String
-    }
 }
+
+
+
